@@ -39,7 +39,8 @@ RUN set -x && \
     # Install required python modules
     python3 -m pip install --no-cache-dir pyxattr && \
     # Install yt-dlp via pip
-    python3 -m pip install --no-cache-dir --force-reinstall yt-dlp && \
+    #python3 -m pip install --no-cache-dir --force-reinstall yt-dlp && \
+    python3 -m pip install --force-reinstall 'git+https://github.com/binsentsu/yt-dlp' && \
     # Create /config directory
     mkdir -p /config && \
     # Clean-up
